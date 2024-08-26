@@ -159,50 +159,59 @@ li {
     background-color: #c99;
     width: 470px;
     height: 99px;
-    margin-top: -50px;
+    margin-top: -90px;
     margin-left: 50px;
 }
 
 .tm-welcome-header {
     color: white;
     padding: 30px 90px 30px 30px;
-    margin: 0;
+
     font-size: 26px;
-    text-align: center;
+
+    margin: 0;
 }
 
 h2 {
     font-weight: 400;
 }
 
-@media (max-width: 768px) {
-    .tm-welcome {
-        width: auto;
+@media (max-width: 700px) {
 
-        height: auto;
+    .tm-welcome,
+    .tm-welcome_company {
 
-        margin: 20px auto;
 
-        padding: 10px;
-    }
 
-    .tm-welcome-header {
-        font-size: 22px;
-
-        padding: 15px;
-
+        width: 470px;
+        height: 99px;
+        margin-top: -30px;
+        margin-left: 50px;
     }
 }
 
+.tm-welcome-header {
+    font-size: 28px;
+
+    padding: 15px;
+    margin-top: 15px;
+    align-items: center;
+}
+
+
 /* Small Devices (Phones) */
 @media (max-width: 480px) {
-    .tm-welcome {
-        width: 100%;
 
-        height: auto;
-        margin: 20px 0;
+    .tm-welcome,
+    .tm-welcome_company {
+        width: 470px;
+        height: 39px;
+        margin-top: -50px;
+        margin-left: 10px;
 
-        padding: 10px;
+
+
+
 
     }
 
@@ -351,13 +360,10 @@ p {
 
 @media (max-width: 768px) {
     .tm-feature {
-        width: 50%;
-
-        height: auto;
-
-        margin: 20px auto;
-
-        padding: 10px;
+        width: 470px;
+        height: 99px;
+        margin-top: -30px;
+        margin-left: 50px;
     }
 
     .tm-feature-header {
@@ -484,5 +490,81 @@ input[type="radio"]:checked+.carousel-controls .control-button {
     .carousel-item {
         width: auto;
         display: block;
+    }
+}
+
+
+/* ////Our Company */
+
+.hero-background2 {
+    background-image: url('../iamges/new-vision-02.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    background-position: 45% top;
+
+    min-height: 500px;
+    margin-left: -40px;
+    margin-right: -40px;
+
+
+}
+
+@media (max-width: 768px) {
+    .hero-background2 {
+        height: auto;
+        min-height: 400px;
+
+        margin-left: -20px;
+        margin-right: -20px;
+        background-position: center top;
+
+    }
+}
+
+
+@media (max-width: 480px) {
+    .hero-background2 {
+        height: auto;
+        min-height: 300px;
+
+        margin: 0;
+
+        background-position: center top;
+
+    }
+}
+
+.tm-welcome_company {
+    background-color: #c99;
+    width: 470px;
+    height: 89px;
+    margin-top: -50px;
+    margin-left: 50px;
+}
+
+.tm-welcome-company-header {
+    color: white;
+    padding: 30px 90px 30px 30px;
+    margin: 0;
+    font-size: 26px;
+    text-align: center;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+
+
+@media (max-width: 480px) {
+    .hero-background {
+        height: auto;
+
+
+        margin: 0;
+
+        background-position: center top;
+
     }
 }
